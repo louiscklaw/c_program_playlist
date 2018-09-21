@@ -25,8 +25,7 @@ int compare_answer(int rgb_1[], int rgb_2[]){
     rgb_1[2]==rgb_2[2];
 }
 
-int main()
-{
+void _test_basic(){
     int expected_rgb[3], actual_rgb[3];
 
     // Question 1
@@ -49,6 +48,13 @@ int main()
     setup_test_answer(255,255,0,expected_rgb);
     HSVToRGB(60,1,1, actual_rgb);
     assert(compare_answer(expected_rgb, actual_rgb));
+
+}
+
+int main()
+{
+    // _test_basic();
+
 
 
     printf("\ntest done\n");
